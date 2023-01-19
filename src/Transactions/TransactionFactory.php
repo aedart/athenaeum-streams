@@ -34,7 +34,8 @@ class TransactionFactory implements Factory
     public function __construct(
         protected array $profiles = [],
         protected string $defaultProfile = 'default'
-    ) {
+    )
+    {
         $this->fallbackProfiles = $this->makeFallbackProfiles();
 
         // Set fallback profiles, when none available
